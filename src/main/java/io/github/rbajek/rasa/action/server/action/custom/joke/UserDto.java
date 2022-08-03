@@ -15,6 +15,6 @@ public class UserDto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
-	private String age;
+	private int age;
 
 }

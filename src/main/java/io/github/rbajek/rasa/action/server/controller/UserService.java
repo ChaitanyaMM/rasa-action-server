@@ -20,5 +20,9 @@ public class UserService {
 	public Iterable<UserDto> findAll() {
 		return userRepository.findAll();
 	}
+	
+	public List<UserDto> findByAge(int value){
+		return  userRepository.findByAgeGreaterThan(value);
+	}
 
 }

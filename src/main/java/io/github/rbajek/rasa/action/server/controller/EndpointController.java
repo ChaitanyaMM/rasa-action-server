@@ -55,7 +55,7 @@ public class EndpointController {
 
    @PostMapping("/webhook")
    public ActionResponse webhook(@RequestBody ActionRequest actionRequest) {
-	   System.out.println("Hola end point controller....................." + actionRequest);
+	   System.out.println("Hola end point controller....................." + actionRequest.toString());
         return rasaActionExecutor.run(actionRequest);
    }
 }
